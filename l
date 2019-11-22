@@ -7,11 +7,10 @@ using namespace std;
 int prepare(int );
 int main()
 {
-int value, outcome = 0, k = 1, U = 0, JF = 0, P = 0;
+int outcome = 0, k = 1, U = 0, JF = 0, P = 0;
 char choice, answer;   
 int C; // class
-string pirates;
-string ninjas;
+string NioP name;
 
 /*
 This is the introduction of our game
@@ -57,7 +56,7 @@ cout<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
     }
    choice = 0;
 
-   cout << endl;
+	cout << endl;
    
 
 cout<<"It is your first day of college! You woke up and got ready in 10 minutes because the excitement to attend your first class is overwhelming.";
@@ -110,14 +109,6 @@ k = 1;
 }
 
 
-
-   if ( value < 0)
-cout << "You wake up in a cold sweat and feel like today is going to be a bad day." <<endl;
-   else if ( value > 0)
-cout << "You wake up feeling energized ready for this amazing day." << endl;
-   else
-cout << "You wake up ready for a boring first day." << endl;
-
 cout<<"You walk out of the resident halls for your first day. The sky is cloudy and the wind is very strong."; 
 cout<<"As your walking you pull the school map out of your pocket that was given to you on Islander Launch day.";
 cout<<"Looking at the map you are looking for the CI building. You can't seem to find it.";
@@ -162,13 +153,13 @@ cout<<"Where will you sit?"<<endl;
 // class 2 seminar - Owllen Hooterson
 
 // class 2 seminar -Rita  Owl
-cout<<"You made it to your seminar class that is in Bayhall.";
-cout  <<"You look out the glass windows and see the ocean. ";
-cout<<"You walk into the class and you sit at a table waiting for the professor to walk in."; 
-cout<<"Then you turn around and see kids fill the room and you begin to feel nervous.";
-cout<<"But then Professor Rita the Owl walks in and she greets everyone in a very welcoming way."; 
-cout<<"She then begins to introduce herself and inform the class of her likes, hobbies.";
-cout<<"Dr Owl then goes over her sylabus and you feel a wave of excitement fufill you."; 
+cout<<"You made it to your seminar class that is in Bayhall. ";
+cout<<"You look out the glass windows and see the ocean. ";
+cout<<"You walk into the class and you sit at a table waiting for the professor to walk in. "; 
+cout<<"Then you turn around and see kids fill the room and you begin to feel nervous. ";
+cout<<"But then Professor Rita the Owl walks in and she greets everyone in a very welcoming way. "; 
+cout<<"She then begins to introduce herself and inform the class of her likes, hobbies. ";
+cout<<"Dr Owl then goes over her sylabus and you feel a wave of excitement fufill you. "; 
 cout <<"The class ends quickly and she asks you to fill out a flashcard to let her get to know you a little more";
 cout<<"(Thank goodness she didnt ask for the class to get up and do ice breakers). "; 
 cout<<"There are little questions she wants you to answer…."<<endl;
@@ -176,19 +167,21 @@ cout<<endl;
 cout<<endl;
 
           cout<<" -----------------------------------------------------------------------"<<endl;
-          cout<< "                  |      What's your name?”         |"<<endl;
+          cout<<"                  |      What's your first name?”         |"<<endl;
           cout<<"|--------------------------------------------------------------------|"<<endl;
-          cout<<"                    |    Pirates or Ninjas??        |"<<endl;
+		  cout<< endl;
+		  cin >> name;
+          cout<<"                   |    Pirates or Ninjas??        |"<<endl;
           cout<<"|--------------------------------------------------------------------|"<<endl;
-          cin>>pirates>>ninjas;
+          cin>>Niop;
           cout<<endl;
           cout<<endl;
-cout<<"You fill out her card and then leave her with the answers. She thanks you and happily hopes you have a good day"<<endl;
+cout<<"You fill out her card and then leave her with the answers. She thanks you and happily hopes you have a good day. "<<endl;
 
 //class 3 Math lab
-        cout <<"You made it to your last class barely.";
-        cout<<"You scramble to your desk. The TA, Turtle Shellson, begins the lab.";
-        cout<<"Nothing major happens but he does say to bring out a piece of paper and a pencil.";
+        cout<<"You made it to your last class barely.";
+        cout<<" You scramble to your desk. The TA, Turtle Shellson, begins the lab.";
+        cout<<" Nothing major happens but he does say to bring out a piece of paper and a pencil.";
 
    if ( P == 0)
 {
@@ -201,13 +194,13 @@ prepare(outcome);
 	}
 do
 {
-cout<<"how was ur first day? ";
+cout<<"how was ur first day? Rate from 0 to 10: ";
 cin>>choice;
 }
 while (choice >10 && choice<0);
-{
-cout<<"Every is a new day. Dream for your goals" << endl;
-}
+
+cout<<"Every is a new day. Dream for your goals. ";
+
 
 
 
@@ -217,9 +210,15 @@ cout<<"Wait a minute…. Something is off…"<<endl;
 cout<<"the ground starts to become shaky and everything is blurry… ehverbeurbqubgruGWgruegrEGRunegm BOOM"<<endl;
 cout<<endl;
 cout<<endl;
-cout<<"BEEP BEEP BEEP BEEP BEEP…. Your eyes open and you go to pick your phone up to see the time displays 9:51AM. You rub your eyes and realize that you dreamed of you going through your whole first day of school!!!!" << endl; 	
-cout << "(iT WaS aLl a DrrRRREeeeaaaAAmmMMMM).  GET UP AND GET READY YOU'RE GOING TO BE LATE TO YOUR FIRST CLASS BUDDY!"<<endl;
-cout<<":)"<<endl; 
+ 
+cout<<"BEEP BEEP BEEP BEEP BEEP…." << endl;
+   if ( outcome < 0)
+cout << "You wake up in a cold sweat and feel like today is going to be a bad day." <<endl;
+   else if ( outcome > 0)
+cout << "You wake up feeling energized ready for this amazing day." << endl;
+   else
+cout << "You wake up ready for a boring first day." << endl;
+
  
 return 0;
 }
